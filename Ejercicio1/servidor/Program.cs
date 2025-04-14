@@ -14,6 +14,10 @@ namespace servidor
 
         static TcpListener? Servidor;
         static string HostName = "127.0.0.1";
+        static int Id = 1;
+        static readonly object locker = new object();
+        static Random rnd = new Random();
+        static readonly string[] Direcciones = ["norte", "sur"];
 
         static void Main(string[] args)
         {
@@ -36,7 +40,17 @@ namespace servidor
         {
             TcpClient Cliente = (TcpClient)c;
 
-            if (Cliente.Connected) Console.WriteLine("Servidor: Gestionando nuevo vehículo…");
+            if (Cliente.Connected)
+            {
+                int IdCliente;
+                lock (locker)
+                {
+                    IdCliente = Id++;
+                }
+                string DirCliente = Direcciones[rnd.Next(0,Direcciones.Length)];
+
+                Console.WriteLine("Servidor: Gestionando vehículo ID - {0}, Direccion - {1}", IdCliente, DirCliente);
+            }
         }
 
     }
