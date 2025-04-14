@@ -26,7 +26,17 @@ namespace servidor
             while (true)
             {
                 TcpClient Cliente = Servidor.AcceptTcpClient();
+
+                Thread TCliente = new Thread(GestionarCliente!);
+                TCliente.Start(Cliente);
             }
+        }
+
+        static void GestionarCliente (object c) 
+        {
+            TcpClient Cliente = (TcpClient)c;
+
+            if (Cliente.Connected) Console.WriteLine("Servidor: Gestionando nuevo vehículo…");
         }
 
     }
