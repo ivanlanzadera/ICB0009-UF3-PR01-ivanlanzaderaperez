@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include = "../NetworkStreamClass/NetworkStreamClass.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
     <ProjectReference Include = "../Conexion/Conexion.csproj" />
   </ItemGroup> 
 

@@ -4,6 +4,7 @@ using System.Net;
 using System.Text;
 using System.IO;
 using System.Threading;
+using NetworkStreamNS;
 
 namespace Client
 {
@@ -12,6 +13,7 @@ namespace Client
 
         static TcpClient? Cliente;
         static string HostName = "127.0.0.1";
+        static NetworkStream? NS;
 
         static void Main(string[] args)
         {
@@ -22,7 +24,12 @@ namespace Client
             {
                 // Establecemos la conexión con el server
                 Cliente.Connect(HostName, 10001);
-                if(Cliente.Connected) Console.WriteLine("Cliente: Conectado");
+                if(Cliente.Connected) 
+                {
+                    Console.WriteLine("Cliente: Conectado");
+                    // Obtenemos el NetworkStream
+                    NS = Cliente.GetStream();
+                }
             } catch (Exception e)
             {
                 Console.WriteLine("Ha ocurrido un error: {0}", e.Message);

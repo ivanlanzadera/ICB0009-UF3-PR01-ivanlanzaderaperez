@@ -5,6 +5,7 @@ using System.IO;
 using System.Text;
 using System.Threading;
 using Conexion;
+using NetworkStreamNS;
 
 namespace servidor
 {
@@ -50,6 +51,9 @@ namespace servidor
                 string DirCliente = Direcciones[rnd.Next(0,Direcciones.Length)];
 
                 Console.WriteLine("Servidor: Gestionando vehículo ID - {0}, Direccion - {1}", IdCliente, DirCliente);
+
+                // Obtenemos NetworkStream
+                NetworkStream NS = Cliente.GetStream();
             }
         }
 
