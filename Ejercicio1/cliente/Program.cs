@@ -12,7 +12,7 @@ namespace Client
     {
 
         static TcpClient? Cliente;
-        static string HostName = "127.0.0.1";
+        static readonly string HostName = "127.0.0.1";
         static NetworkStream? NS;
 
         static void Main(string[] args)
@@ -29,11 +29,13 @@ namespace Client
                     Console.WriteLine("Cliente: Conectado");
                     // Obtenemos el NetworkStream
                     NS = Cliente.GetStream();
+                    NetworkStreamClass.EscribirMensajeNetworkStream(NS, "Mensaje del cliente");
                 }
             } catch (Exception e)
             {
                 Console.WriteLine("Ha ocurrido un error: {0}", e.Message);
             }
+            Console.ReadLine();
         }
 
     }

@@ -54,6 +54,10 @@ namespace servidor
 
                 // Obtenemos NetworkStream
                 NetworkStream NS = Cliente.GetStream();
+
+                // Leemos mensajes del cliente
+                string msg = NetworkStreamClass.LeerMensajeNetworkStream(NS);
+                Console.WriteLine("Mensaje del cliente {0}: {1}", IdCliente, msg);
             }
         }
 
