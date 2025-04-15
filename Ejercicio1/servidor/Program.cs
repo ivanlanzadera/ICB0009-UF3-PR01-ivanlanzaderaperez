@@ -25,7 +25,7 @@ namespace servidor
             // Creamos e iniciamos el server
             Servidor = new TcpListener(IPAddress.Parse(HostName), 10001);
             Servidor.Start();
-            Console.WriteLine("Server: Servidor iniciado");
+            Console.WriteLine("Servidor iniciado. Escuchando nuevas conexiones...");
 
             // Acceptamos nuevas conexiones
             while (true)
@@ -41,23 +41,40 @@ namespace servidor
         {
             TcpClient Cliente = (TcpClient)c;
 
-            if (Cliente.Connected)
+            try
             {
-                int IdCliente;
-                lock (locker)
+                if (Cliente.Connected)
                 {
-                    IdCliente = Id++;
+                    // Obtenemos NetworkStream
+                    NetworkStream NS = Cliente.GetStream();
+                    int IdCliente;
+                    string DirCliente;
+
+                    // Establecemos Handshake
+                    if (NetworkStreamClass.LeerMensajeNetworkStream(NS) == "INICIO")
+                    {
+                        lock (locker)
+                        {
+                            IdCliente = Id++;
+                        }
+                        DirCliente = Direcciones[rnd.Next(0,Direcciones.Length)];
+
+                        NetworkStreamClass.EscribirMensajeNetworkStream(NS, IdCliente.ToString());
+                        string RespuestaHandShake = NetworkStreamClass.LeerMensajeNetworkStream(NS);
+                        if (RespuestaHandShake != IdCliente.ToString()) 
+                            throw new Exception("El cliente "+IdCliente+" no ha completado el handshake como se esperaba. Cerrando conexión...");
+                        
+                        Console.WriteLine("El handshake del cliente {0} ha sido exitoso!", IdCliente);
+                    } else
+                    {
+                        throw new Exception("El cliente ha iniciado el handshake erróneamente. Cerrando conexión...");
+                    }
+                    
                 }
-                string DirCliente = Direcciones[rnd.Next(0,Direcciones.Length)];
-
-                Console.WriteLine("Servidor: Gestionando vehículo ID - {0}, Direccion - {1}", IdCliente, DirCliente);
-
-                // Obtenemos NetworkStream
-                NetworkStream NS = Cliente.GetStream();
-
-                // Leemos mensajes del cliente
-                string msg = NetworkStreamClass.LeerMensajeNetworkStream(NS);
-                Console.WriteLine("Mensaje del cliente {0}: {1}", IdCliente, msg);
+            } catch (Exception e)
+            {
+                Console.WriteLine("Ha ocurrido un error: {0}", e.Message);
+                Cliente.Close();
             }
         }
 

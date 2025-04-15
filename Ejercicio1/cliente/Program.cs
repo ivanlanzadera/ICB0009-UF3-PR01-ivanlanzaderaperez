@@ -14,6 +14,7 @@ namespace Client
         static TcpClient? Cliente;
         static readonly string HostName = "127.0.0.1";
         static NetworkStream? NS;
+        static int Id;
 
         static void Main(string[] args)
         {
@@ -26,10 +27,15 @@ namespace Client
                 Cliente.Connect(HostName, 10001);
                 if(Cliente.Connected) 
                 {
-                    Console.WriteLine("Cliente: Conectado");
                     // Obtenemos el NetworkStream
                     NS = Cliente.GetStream();
-                    NetworkStreamClass.EscribirMensajeNetworkStream(NS, "Mensaje del cliente");
+
+                    // Establecer el Handshake
+                    NetworkStreamClass.EscribirMensajeNetworkStream(NS, "INICIO");
+                    Id = int.Parse(NetworkStreamClass.LeerMensajeNetworkStream(NS));
+                    NetworkStreamClass.EscribirMensajeNetworkStream(NS, Id.ToString());
+
+                    Console.WriteLine("Cliente: Conectado");
                 }
             } catch (Exception e)
             {
