@@ -1,12 +1,7 @@
-﻿using System;
-using System.Net.Sockets;
-using System.Net;
-using System.Text;
-using System.IO;
-using System.Threading;
+﻿using System.Net.Sockets;
 using NetworkStreamNS;
 
-namespace Client
+namespace cliente
 {
     class Program
     {
@@ -36,12 +31,20 @@ namespace Client
                     NetworkStreamClass.EscribirMensajeNetworkStream(NS, Id.ToString());
 
                     Console.WriteLine("Cliente: Conectado");
+
+                    string msg;
+                    do 
+                    {
+                        msg = Console.ReadLine()!;
+                        NetworkStreamClass.EscribirMensajeNetworkStream(NS, msg);
+                        string respuesta = NetworkStreamClass.LeerMensajeNetworkStream(NS);
+                        if (msg != "quit") Console.WriteLine("{0}", respuesta);
+                    } while(msg != "quit");
                 }
             } catch (Exception e)
             {
                 Console.WriteLine("Ha ocurrido un error: {0}", e.Message);
             }
-            Console.ReadLine();
         }
 
     }

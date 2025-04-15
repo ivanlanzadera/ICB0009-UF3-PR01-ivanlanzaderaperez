@@ -1,6 +1,15 @@
-﻿namespace Conexion;
+﻿using System.Net.Sockets;
 
-public class Class1
+namespace Conexion;
+
+public class Cliente
 {
+    public int Id { get; set; }
+    public NetworkStream NS { get; set; }
 
+    public Cliente (int id, NetworkStream ns)
+    {
+        Id = id;
+        NS = ns;
+    }
 }
