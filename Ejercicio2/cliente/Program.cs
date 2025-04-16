@@ -35,8 +35,12 @@ namespace cliente
 
                     Console.WriteLine("Cliente: Conectado");
 
+                    // Recogemos la dirección que nos indica el servidor
+                    string Dir = NetworkStreamClass.LeerMensajeNetworkStream(NS);
+
                     vehiculo = new Vehiculo();
                     vehiculo.Id = Id;
+                    vehiculo.Direccion = Dir;
 
                     // Pasamos datos del vehiculo al server
                     NetworkStreamClass.EscribirDatosVehiculoNS(NS, vehiculo);
@@ -62,6 +66,7 @@ namespace cliente
             {
                 Console.WriteLine("Ha ocurrido un error: {0}", e.Message);
             }
+            Console.ReadLine();
         }
 
     }

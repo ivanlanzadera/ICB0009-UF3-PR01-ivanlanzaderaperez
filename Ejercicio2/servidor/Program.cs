@@ -75,14 +75,17 @@ namespace servidor
                         {
                             clientes.Add(conexion);
                         }
-                        Console.WriteLine("Conexión creada - Total conexiones: {0}", clientes.Count);
+                        NetworkStreamClass.EscribirMensajeNetworkStream(NS, DirCliente);
 
                         Vehiculo v;
                         do
                         {
                             v = NetworkStreamClass.LeerDatosVehiculoNS(NS);
-                            Console.WriteLine("Nuevo vehículo - ID: {0}", v.Id);
-                            carretera.AñadirVehiculo(v);
+                            lock (locker)
+                            {
+                                carretera.AñadirVehiculo(v);
+                            }
+                            MostrarVehiculos();
                             NetworkStreamClass.EscribirDatosCarreteraNS(NS, carretera);
                         } while (true);
                         
@@ -116,6 +119,23 @@ namespace servidor
             {
                 Console.WriteLine("Ha ocurrido un error: {0}", e.Message);
                 Cliente.Close();
+            }
+        }
+
+        private static void MostrarVehiculos()
+        {
+            Console.WriteLine("\n\n\n### MOSTRANDO ESTADO DE LOS VEHÍCULOS ###\n");
+            foreach (Vehiculo v in carretera.VehiculosEnCarretera)
+            {
+                Console.Write("[{0}]\t Vehículo #{1}: ", v.Direccion, v.Id);
+                for (int i = 0; i<100; i += 2)
+                {
+                    if (i<v.Pos) Console.Write("+");
+                    else Console.Write("-");
+                }
+                Console.Write(" (Km {0} - ", v.Pos);
+                if (v.Parado) Console.WriteLine("Esperando)");
+                else Console.WriteLine("Cruzando)");
             }
         }
 
