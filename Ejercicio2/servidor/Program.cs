@@ -90,19 +90,6 @@ namespace servidor
                             carretera.ActualizarVehiculo( NetworkStreamClass.LeerDatosVehiculoNS(NS) );
                             MostrarVehiculos();
                         } while (!v.Acabado);
-                        
-                        
-                        // string instruccion;
-                        // do
-                        // {
-                        //     instruccion = NetworkStreamClass.LeerMensajeNetworkStream(NS);
-                        //     if (instruccion == null) 
-                        //         throw new DesconexionClienteException(conexion, "El cliente ha cerrado la conexión de forma inesperada. Liberando recursos...");
-                        //     if (instruccion == "quit") 
-                        //         throw new DesconexionClienteException(conexion, "El cliente ha cerrado la conexión de forma controlada. Liberando recursos...");
-                        //     NetworkStreamClass.EscribirMensajeNetworkStream(NS, "Servidor: Petición realizada ("+instruccion+")");
-                        //     Console.WriteLine("Se ha procesado la solicitud: {0}", instruccion);
-                        // } while (true);
                     } else
                     {
                         throw new Exception("El cliente ha iniciado el handshake erróneamente. Cerrando conexión...");
@@ -133,8 +120,15 @@ namespace servidor
                 Console.Write("[{0}]\t Vehículo #{1}: ", v.Direccion, v.Id);
                 for (int i = 0; i<100; i += 2)
                 {
-                    if (i<v.Pos) Console.Write("+");
-                    else Console.Write("-");
+                    if (v.Direccion == "sur")
+                    {
+                        if (i<v.Pos) Console.Write("+");
+                        else Console.Write("-");
+                    } else 
+                    {
+                        if (i<v.Pos) Console.Write("-");
+                        else Console.Write("+");
+                    }
                 }
                 Console.Write(" (Km {0} - ", v.Pos);
                 if (v.Parado) Console.WriteLine("Esperando)");

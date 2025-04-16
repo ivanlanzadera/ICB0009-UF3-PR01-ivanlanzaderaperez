@@ -41,25 +41,27 @@ namespace cliente
                     v = new Vehiculo();
                     v.Id = Id;
                     v.Direccion = Dir;
-
-                    // Bucle para operar el vehículo
-                    for (int i = 0; i < 100; i++)
+                    if (v.Direccion == "norte") 
                     {
-                        Thread.Sleep(v.Velocidad);
-                        v.Pos++;
-                        NetworkStreamClass.EscribirDatosVehiculoNS(NS, v);
+                        v.Pos = 100;
+                        for (int i = 100; i > 0; i--)
+                        {
+                            Thread.Sleep(v.Velocidad);
+                            v.Pos--;
+                            NetworkStreamClass.EscribirDatosVehiculoNS(NS, v);
+                        }
+                    } else 
+                    {
+                        for (int i = 0; i < 100; i++)
+                        {
+                            Thread.Sleep(v.Velocidad);
+                            v.Pos++;
+                            NetworkStreamClass.EscribirDatosVehiculoNS(NS, v);
+                        }
                     }
+                    // Bucle para operar el vehículo
 
                     v.Acabado = true;
-
-                    // string msg;
-                    // do 
-                    // {
-                    //     msg = Console.ReadLine()!;
-                    //     NetworkStreamClass.EscribirMensajeNetworkStream(NS, msg);
-                    //     string respuesta = NetworkStreamClass.LeerMensajeNetworkStream(NS);
-                    //     if (msg != "quit") Console.WriteLine("{0}", respuesta);
-                    // } while(msg != "quit");
                 }
             } catch (Exception e)
             {
