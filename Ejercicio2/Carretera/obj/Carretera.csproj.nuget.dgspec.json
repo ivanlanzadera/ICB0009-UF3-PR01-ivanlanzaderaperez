@@ -1,0 +1,138 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Carretera/Carretera.csproj": {}
+  },
+  "projects": {
+    "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Carretera/Carretera.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Carretera/Carretera.csproj",
+        "projectName": "Carretera",
+        "projectPath": "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Carretera/Carretera.csproj",
+        "packagesPath": "/Users/pablobd/.nuget/packages/",
+        "outputPath": "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Carretera/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/pablobd/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Vehiculo/Vehiculo.csproj": {
+                "projectPath": "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Vehiculo/Vehiculo.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Vehiculo/Vehiculo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Vehiculo/Vehiculo.csproj",
+        "projectName": "Vehiculo",
+        "projectPath": "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Vehiculo/Vehiculo.csproj",
+        "packagesPath": "/Users/pablobd/.nuget/packages/",
+        "outputPath": "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Vehiculo/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/pablobd/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
