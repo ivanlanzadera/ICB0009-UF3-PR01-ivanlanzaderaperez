@@ -38,6 +38,9 @@ namespace cliente
                     // Recogemos la dirección que nos indica el servidor
                     string Dir = NetworkStreamClass.LeerMensajeNetworkStream(NS);
 
+                    Task TareaCarretera = new(EscuchasCarretera);
+                    TareaCarretera.Start();
+
                     v = new Vehiculo();
                     v.Id = Id;
                     v.Direccion = Dir;
@@ -68,6 +71,37 @@ namespace cliente
                 Console.WriteLine("Ha ocurrido un error: {0}", e.Message);
             }
             Console.ReadLine();
+        }
+
+        private static void EscuchasCarretera()
+        {
+            Carretera c;
+
+            do
+            {
+                c = NetworkStreamClass.LeerDatosCarreteraNS(NS);
+                Console.WriteLine("\n\n\n### MOSTRANDO ESTADO DE LOS VEHÍCULOS ###\n");
+                foreach (Vehiculo v in c.VehiculosEnCarretera)
+                {
+                    Console.Write("[{0}]\t Vehículo #{1}: ", v.Direccion, v.Id);
+                    for (int i = 0; i<100; i += 2)
+                    {
+                        if (v.Direccion == "sur")
+                        {
+                            if (i<v.Pos) Console.Write("+");
+                            else Console.Write("-");
+                        } else 
+                        {
+                            if (i<v.Pos) Console.Write("-");
+                            else Console.Write("+");
+                        }
+                    }
+                    Console.Write(" (Km {0} - ", v.Pos);
+                    if (v.Parado) Console.WriteLine("Esperando)");
+                    else Console.WriteLine("Cruzando)");
+                }
+
+            } while (true);
         }
 
     }

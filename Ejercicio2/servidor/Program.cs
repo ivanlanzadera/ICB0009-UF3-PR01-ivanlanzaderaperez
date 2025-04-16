@@ -85,17 +85,22 @@ namespace servidor
                         }
                         MostrarVehiculos();
 
+                        
                         do
                         {   // Recibimos la actualización del vehículo y lo registramos en la carretera
-                            carretera.ActualizarVehiculo( NetworkStreamClass.LeerDatosVehiculoNS(NS) );
+                            Vehiculo VActual = NetworkStreamClass.LeerDatosVehiculoNS(NS);
+                            lock(locker)
+                            {
+                                carretera.ActualizarVehiculo( VActual );
+                            }
                             MostrarVehiculos();
-                        } while (!v.Acabado);
 
-                        // Enviamos los datos de la carretera a todos los clientes
-                        foreach (Cliente cli in clientes)
-                        {
-                            NetworkStreamClass.EscribirDatosCarreteraNS(cli.NS, carretera);
-                        }
+                            // Enviamos los datos de la carretera a todos los clientes
+                            foreach (Cliente cli in clientes)
+                            {
+                                NetworkStreamClass.EscribirDatosCarreteraNS(cli.NS, carretera);
+                            }
+                        } while (!v.Acabado);
                     } else
                     {
                         throw new Exception("El cliente ha iniciado el handshake erróneamente. Cerrando conexión...");
