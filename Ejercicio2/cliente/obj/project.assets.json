@@ -2,28 +2,67 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "Carretera/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Vehiculo": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Carretera.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Carretera.dll": {}
+        }
+      },
       "NetworkStreamClass/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Carretera": "1.0.0",
+          "Vehiculo": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/NetworkStreamClass.dll": {}
         },
         "runtime": {
           "bin/placeholder/NetworkStreamClass.dll": {}
         }
+      },
+      "Vehiculo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Vehiculo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Vehiculo.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Carretera/1.0.0": {
+      "type": "project",
+      "path": "../Carretera/Carretera.csproj",
+      "msbuildProject": "../Carretera/Carretera.csproj"
+    },
     "NetworkStreamClass/1.0.0": {
       "type": "project",
       "path": "../NetworkStreamClass/NetworkStreamClass.csproj",
       "msbuildProject": "../NetworkStreamClass/NetworkStreamClass.csproj"
+    },
+    "Vehiculo/1.0.0": {
+      "type": "project",
+      "path": "../Vehiculo/Vehiculo.csproj",
+      "msbuildProject": "../Vehiculo/Vehiculo.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "NetworkStreamClass >= 1.0.0"
+      "Carretera >= 1.0.0",
+      "NetworkStreamClass >= 1.0.0",
+      "Vehiculo >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -32,11 +71,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio1\\cliente\\cliente.csproj",
+      "projectUniqueName": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\cliente\\cliente.csproj",
       "projectName": "cliente",
-      "projectPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio1\\cliente\\cliente.csproj",
+      "projectPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\cliente\\cliente.csproj",
       "packagesPath": "C:\\Users\\ivanl\\.nuget\\packages\\",
-      "outputPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio1\\cliente\\obj\\",
+      "outputPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\cliente\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ivanl\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -51,8 +90,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio1\\NetworkStreamClass\\NetworkStreamClass.csproj": {
-              "projectPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio1\\NetworkStreamClass\\NetworkStreamClass.csproj"
+            "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Carretera\\Carretera.csproj": {
+              "projectPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Carretera\\Carretera.csproj"
+            },
+            "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\NetworkStreamClass\\NetworkStreamClass.csproj": {
+              "projectPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\NetworkStreamClass\\NetworkStreamClass.csproj"
+            },
+            "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Vehiculo\\Vehiculo.csproj": {
+              "projectPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Vehiculo\\Vehiculo.csproj"
             }
           }
         }

@@ -1,21 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KdfUXNo6vAU=",
-  "success": false,
-  "projectFilePath": "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Carretera/Carretera.csproj",
-  "expectedPackageFiles": [
-    "/Users/pablobd/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "/Users/pablobd/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
-  ],
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project Vehiculo is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Project Vehiculo supports: net8.0 (.NETCoreApp,Version=v8.0)",
-      "libraryId": "Vehiculo",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "dgSpecHash": "+oOMOTaBvy0=",
+  "success": true,
+  "projectFilePath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Carretera\\Carretera.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
 }

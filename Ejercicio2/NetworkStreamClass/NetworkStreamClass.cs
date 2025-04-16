@@ -2,7 +2,8 @@
 using System.Net.Sockets;
 using System.Text;
 using System.IO;
-
+using VehiculoClass;
+using CarreteraClass;
 
 namespace NetworkStreamNS
 {
@@ -10,28 +11,63 @@ namespace NetworkStreamNS
     {
         //Método para escribir en un NetworkStream los datos de tipo Carretera
         public static void  EscribirDatosCarreteraNS(NetworkStream NS, Carretera C)
-        {            
-                            
+        {
+            // Pasar los datos a bytes
+            byte[] DatosCarretera = C.CarreteraABytes();
+            // Escribimos en el NS
+            NS.Write(DatosCarretera, 0, DatosCarretera.Length);
         }
 
         //Metódo para leer de un NetworkStream los datos que de un objeto Carretera
-        /*public static Carretera LeerDatosCarreteraNS (NetworkStream NS)
+        public static Carretera LeerDatosCarreteraNS (NetworkStream NS)
         {
-            
+            int bytesLeidos = 0;
+            var tmpStream = new MemoryStream();
+            byte[] bytesTotales;
+            byte[] buffer = new byte[1024];
 
-        }*/
+            do
+            {   // Leemos del NS y escribimos en un stream temporal
+                int bytesTemporales = NS.Read(buffer, 0, buffer.Length);
+                tmpStream.Write(buffer, 0, bytesTemporales);
+                bytesLeidos = bytesLeidos + bytesTemporales;
+            } while (NS.DataAvailable);
+
+            bytesTotales = tmpStream.ToArray();
+
+            // Pasamos bytes a Carretera
+            return Carretera.BytesACarretera(bytesTotales);
+        }
 
         //Método para enviar datos de tipo Vehiculo en un NetworkStream
         public static void  EscribirDatosVehiculoNS(NetworkStream NS, Vehiculo V)
-        {            
-                              
+        {
+            // Pasar vehiculo a bytes
+            byte[] DatosVehiculo = V.VehiculoaBytes();
+            // Escribir en el NS
+            NS.Write(DatosVehiculo, 0, DatosVehiculo.Length);
         }
 
         //Metódo para leer de un NetworkStream los datos que de un objeto Vehiculo
-        /*public static Vehiculo LeerDatosVehiculoNS (NetworkStream NS)
+        public static Vehiculo LeerDatosVehiculoNS (NetworkStream NS)
         {
+            int bytesLeidos = 0;
+            var tmpStream = new MemoryStream();
+            byte[] bytesTotales;
+            byte[] buffer = new byte[1024];
 
-        }*/
+            do
+            {   // Leemos del NS y escribimos en un stream temporal
+                int bytesTemporales = NS.Read(buffer, 0, buffer.Length);
+                tmpStream.Write(buffer, 0, bytesTemporales);
+                bytesLeidos = bytesLeidos + bytesTemporales;
+            } while (NS.DataAvailable);
+
+            bytesTotales = tmpStream.ToArray();
+
+            // Pasamos bytes a Vehiculo
+            return Vehiculo.BytesAVehiculo(bytesTotales);
+        }
 
         //Método que permite leer un mensaje de tipo texto (string) de un NetworkStream
         public static string LeerMensajeNetworkStream (NetworkStream NS)

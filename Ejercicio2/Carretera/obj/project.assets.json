@@ -1,10 +1,10 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net8.0": {
       "Vehiculo/1.0.0": {
         "type": "project",
-        "framework": "Unsupported,Version=v0.0",
+        "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
           "bin/placeholder/Vehiculo.dll": {}
         },
@@ -22,37 +22,37 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
+    "net8.0": [
       "Vehiculo >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "/Users/pablobd/.nuget/packages/": {}
+    "C:\\Users\\ivanl\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Carretera/Carretera.csproj",
+      "projectUniqueName": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Carretera\\Carretera.csproj",
       "projectName": "Carretera",
-      "projectPath": "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Carretera/Carretera.csproj",
-      "packagesPath": "/Users/pablobd/.nuget/packages/",
-      "outputPath": "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Carretera/obj/",
+      "projectPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Carretera\\Carretera.csproj",
+      "packagesPath": "C:\\Users\\ivanl\\.nuget\\packages\\",
+      "outputPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Carretera\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/pablobd/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ivanl\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net8.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Vehiculo/Vehiculo.csproj": {
-              "projectPath": "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Vehiculo/Vehiculo.csproj"
+            "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Vehiculo\\Vehiculo.csproj": {
+              "projectPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Vehiculo\\Vehiculo.csproj"
             }
           }
         }
@@ -69,8 +69,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
@@ -82,34 +82,13 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.36, 6.0.36]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.36, 6.0.36]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1201",
-      "level": "Error",
-      "message": "Project Vehiculo is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Project Vehiculo supports: net8.0 (.NETCoreApp,Version=v8.0)",
-      "libraryId": "Vehiculo",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }

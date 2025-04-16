@@ -1,0 +1,16 @@
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\Carretera\bin\Debug\net8.0\Carretera.deps.json
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\Carretera\bin\Debug\net8.0\Carretera.dll
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\Carretera\bin\Debug\net8.0\Carretera.pdb
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\Carretera\bin\Debug\net8.0\Vehiculo.dll
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\Carretera\bin\Debug\net8.0\Vehiculo.pdb
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\Carretera\obj\Debug\net8.0\Carretera.csproj.AssemblyReference.cache
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\Carretera\obj\Debug\net8.0\Carretera.GeneratedMSBuildEditorConfig.editorconfig
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\Carretera\obj\Debug\net8.0\Carretera.AssemblyInfoInputs.cache
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\Carretera\obj\Debug\net8.0\Carretera.AssemblyInfo.cs
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\Carretera\obj\Debug\net8.0\Carretera.csproj.CoreCompileInputs.cache
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\Carretera\obj\Debug\net8.0\Carretera.sourcelink.json
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\Carretera\obj\Debug\net8.0\Carretera.csproj.Up2Date
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\Carretera\obj\Debug\net8.0\Carretera.dll
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\Carretera\obj\Debug\net8.0\refint\Carretera.dll
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\Carretera\obj\Debug\net8.0\Carretera.pdb
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\Carretera\obj\Debug\net8.0\ref\Carretera.dll

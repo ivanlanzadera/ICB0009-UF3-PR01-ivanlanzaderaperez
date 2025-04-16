@@ -2,6 +2,8 @@
 using System.Net;
 using Conexion;
 using NetworkStreamNS;
+using VehiculoClass;
+using CarreteraClass;
 
 namespace servidor
 {
@@ -17,12 +19,17 @@ namespace servidor
         static readonly string[] Direcciones = ["norte", "sur"];
         static List<Cliente> clientes = new();
 
+        #pragma warning disable CS8618
+        static Carretera carretera;
+        #pragma warning restore CS8618
+
         static void Main(string[] args)
         {
             // Creamos e iniciamos el server
             Servidor = new TcpListener(IPAddress.Parse(HostName), 10001);
             Servidor.Start();
             Console.WriteLine("Servidor iniciado. Escuchando nuevas conexiones...");
+            carretera = new Carretera();
 
             // Acceptamos nuevas conexiones
             while (true)
@@ -69,17 +76,27 @@ namespace servidor
                             clientes.Add(conexion);
                         }
                         Console.WriteLine("Conexión creada - Total conexiones: {0}", clientes.Count);
-                        string instruccion;
+
+                        Vehiculo v;
                         do
                         {
-                            instruccion = NetworkStreamClass.LeerMensajeNetworkStream(NS);
-                            if (instruccion == null) 
-                                throw new DesconexionClienteException(conexion, "El cliente ha cerrado la conexión de forma inesperada. Liberando recursos...");
-                            if (instruccion == "quit") 
-                                throw new DesconexionClienteException(conexion, "El cliente ha cerrado la conexión de forma controlada. Liberando recursos...");
-                            NetworkStreamClass.EscribirMensajeNetworkStream(NS, "Servidor: Petición realizada ("+instruccion+")");
-                            Console.WriteLine("Se ha procesado la solicitud: {0}", instruccion);
+                            v = NetworkStreamClass.LeerDatosVehiculoNS(NS);
+                            Console.WriteLine("Nuevo vehículo - ID: {0}", v.Id);
+                            carretera.AñadirVehiculo(v);
+                            NetworkStreamClass.EscribirDatosCarreteraNS(NS, carretera);
                         } while (true);
+                        
+                        // string instruccion;
+                        // do
+                        // {
+                        //     instruccion = NetworkStreamClass.LeerMensajeNetworkStream(NS);
+                        //     if (instruccion == null) 
+                        //         throw new DesconexionClienteException(conexion, "El cliente ha cerrado la conexión de forma inesperada. Liberando recursos...");
+                        //     if (instruccion == "quit") 
+                        //         throw new DesconexionClienteException(conexion, "El cliente ha cerrado la conexión de forma controlada. Liberando recursos...");
+                        //     NetworkStreamClass.EscribirMensajeNetworkStream(NS, "Servidor: Petición realizada ("+instruccion+")");
+                        //     Console.WriteLine("Se ha procesado la solicitud: {0}", instruccion);
+                        // } while (true);
                     } else
                     {
                         throw new Exception("El cliente ha iniciado el handshake erróneamente. Cerrando conexión...");

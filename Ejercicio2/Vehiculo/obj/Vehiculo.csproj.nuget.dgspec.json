@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Vehiculo/Vehiculo.csproj": {}
+    "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Vehiculo\\Vehiculo.csproj": {}
   },
   "projects": {
-    "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Vehiculo/Vehiculo.csproj": {
+    "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Vehiculo\\Vehiculo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Vehiculo/Vehiculo.csproj",
+        "projectUniqueName": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Vehiculo\\Vehiculo.csproj",
         "projectName": "Vehiculo",
-        "projectPath": "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Vehiculo/Vehiculo.csproj",
-        "packagesPath": "/Users/pablobd/.nuget/packages/",
-        "outputPath": "/Users/pablobd/Documents/Formacion/M09/2_UF3/Practica/codigo/Vehiculo/obj/",
+        "projectPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Vehiculo\\Vehiculo.csproj",
+        "packagesPath": "C:\\Users\\ivanl\\.nuget\\packages\\",
+        "outputPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Vehiculo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/pablobd/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ivanl\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.406/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

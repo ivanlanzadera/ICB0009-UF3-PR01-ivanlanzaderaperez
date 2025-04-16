@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio1\\Conexion\\Conexion.csproj",
+      "projectUniqueName": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Conexion\\Conexion.csproj",
       "projectName": "Conexion",
-      "projectPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio1\\Conexion\\Conexion.csproj",
+      "projectPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Conexion\\Conexion.csproj",
       "packagesPath": "C:\\Users\\ivanl\\.nuget\\packages\\",
-      "outputPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio1\\Conexion\\obj\\",
+      "outputPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio2\\Conexion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ivanl\\AppData\\Roaming\\NuGet\\NuGet.Config"
