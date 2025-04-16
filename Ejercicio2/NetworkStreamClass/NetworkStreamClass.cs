@@ -28,7 +28,14 @@ namespace NetworkStreamNS
 
             do
             {   // Leemos del NS y escribimos en un stream temporal
-                int bytesTemporales = NS.Read(buffer, 0, buffer.Length);
+                int bytesTemporales;
+                try 
+                {
+                    bytesTemporales = NS.Read(buffer, 0, buffer.Length);
+                } catch (Exception)
+                {
+                    return null;
+                }
                 tmpStream.Write(buffer, 0, bytesTemporales);
                 bytesLeidos = bytesLeidos + bytesTemporales;
             } while (NS.DataAvailable);
@@ -58,7 +65,14 @@ namespace NetworkStreamNS
 
             do
             {   // Leemos del NS y escribimos en un stream temporal
-                int bytesTemporales = NS.Read(buffer, 0, buffer.Length);
+                int bytesTemporales;
+                try 
+                {
+                    bytesTemporales = NS.Read(buffer, 0, buffer.Length);
+                } catch (Exception)
+                {
+                    return null;
+                }
                 tmpStream.Write(buffer, 0, bytesTemporales);
                 bytesLeidos = bytesLeidos + bytesTemporales;
             } while (NS.DataAvailable);
@@ -84,7 +98,7 @@ namespace NetworkStreamNS
                 // Leemos del NS, si la conexión se cierra devolvemos null para manejar excepciones en server
                 int bytesLectura;
                 try {bytesLectura = NS.Read(bufferLectura,0,bufferLectura.Length);}
-                catch (Exception e)
+                catch (Exception)
                 {
                     return null;
                 }

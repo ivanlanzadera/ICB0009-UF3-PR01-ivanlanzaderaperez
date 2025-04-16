@@ -78,7 +78,8 @@ namespace servidor
                         NetworkStreamClass.EscribirMensajeNetworkStream(NS, DirCliente);
 
                         // Recibimos el vehículo que ha creado el cliente
-                        Vehiculo v = NetworkStreamClass.LeerDatosVehiculoNS(NS);
+                        Vehiculo v = NetworkStreamClass.LeerDatosVehiculoNS(NS) ?? throw new DesconexionClienteException(conexion, null, 
+                            "El cliente se ha desconectado de forma abrupta. Liberando recursos...");
                         lock (locker)
                         {
                             carretera.AñadirVehiculo(v);
@@ -88,7 +89,8 @@ namespace servidor
                         
                         do
                         {   // Recibimos la actualización del vehículo y lo registramos en la carretera
-                            Vehiculo VActual = NetworkStreamClass.LeerDatosVehiculoNS(NS);
+                            Vehiculo VActual = NetworkStreamClass.LeerDatosVehiculoNS(NS) ?? throw new DesconexionClienteException(conexion, v, 
+                            "El cliente se ha desconectado de forma abrupta. Liberando recursos...");
                             lock(locker)
                             {
                                 carretera.ActualizarVehiculo( VActual );
@@ -110,6 +112,13 @@ namespace servidor
             } catch (DesconexionClienteException e)
             {
                 Console.WriteLine(e.Message);
+                if (e.Vehiculo != null)
+                {
+                    lock(locker)
+                    {
+                        carretera.VehiculosEnCarretera.Remove(e.Vehiculo);
+                    }
+                }
                 Cliente.Close();
                 lock (locker)
                 {
