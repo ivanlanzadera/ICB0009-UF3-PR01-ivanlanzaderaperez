@@ -31,7 +31,7 @@ namespace cliente
                     NS = Cliente.GetStream();
 
                     // Establecer el Handshake
-                    int Id = Handshake(NS);
+                    Id = Handshake(NS);
 
                     // Recogemos la dirección que nos indica el servidor
                     string Dir = NetworkStreamClass.LeerMensajeNetworkStream(NS);
@@ -46,7 +46,9 @@ namespace cliente
             {
                 Console.WriteLine("Ha ocurrido un error: {0}", e.Message);
             }
-            Console.ReadLine();
+            Thread.Sleep(400);
+            NS?.Close();
+            Cliente.Close();
         }
 
         private static int Handshake(NetworkStream NS)
@@ -84,6 +86,7 @@ namespace cliente
             }
 
             v.Acabado = true;
+            NetworkStreamClass.EscribirDatosVehiculoNS(NS, v);
         }
 
         private static void EscuchasCarretera()
@@ -94,25 +97,30 @@ namespace cliente
             {
                 c = NetworkStreamClass.LeerDatosCarreteraNS(NS);
                 Console.WriteLine("\n\n\n### MOSTRANDO ESTADO DE LOS VEHÍCULOS ###\n");
-                foreach (Vehiculo v in c.VehiculosEnCarretera)
+                foreach (Vehiculo vehiculo in c.VehiculosEnCarretera)
                 {
-                    Console.Write("[{0}]\t Vehículo #{1}: ", v.Direccion, v.Id);
+                    Console.Write("[{0}]\t Vehículo #{1}: ", vehiculo.Direccion, vehiculo.Id);
                     for (int i = 0; i<100; i += 2)
                     {
-                        if (v.Direccion == "sur")
+                        if (vehiculo.Direccion == "sur")
                         {
-                            if (i<v.Pos) Console.Write("+");
+                            if (i<vehiculo.Pos) Console.Write("+");
                             else Console.Write("-");
                         } else 
                         {
-                            if (i<v.Pos) Console.Write("-");
+                            if (i<vehiculo.Pos) Console.Write("-");
                             else Console.Write("+");
                         }
                     }
-                    Console.Write(" (Km {0} - ", v.Pos);
-                    if (v.Parado) Console.WriteLine("Esperando)");
+                    Console.Write(" (Km {0} - ", vehiculo.Pos);
+                    if (vehiculo.Parado) Console.WriteLine("Esperando)");
                     else Console.WriteLine("Cruzando)");
                 }
+
+                if (v != null && v.Acabado)
+                {
+                    break;
+                }   
 
             } while (true);
         }

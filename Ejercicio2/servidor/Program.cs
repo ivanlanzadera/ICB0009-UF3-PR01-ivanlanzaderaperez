@@ -67,7 +67,7 @@ namespace servidor
             } catch (DesconexionClienteException e)
             { // Manejo de desconexión tras haber realizado el handshake
                 Console.WriteLine(e.Message);
-                if (e.Vehiculo != null)
+                if (e.Vehiculo != null && !e.Vehiculo.Acabado)
                 {
                     lock(locker)
                     {
@@ -149,9 +149,20 @@ namespace servidor
                 MostrarVehiculos();
 
                 // Enviamos los datos de la carretera a todos los clientes
-                foreach (Cliente cli in clientes)
+                foreach (Cliente cli in clientes.ToList())
                 {
-                    NetworkStreamClass.EscribirDatosCarreteraNS(cli.NS, carretera);
+                    try
+                    {
+                        NetworkStreamClass.EscribirDatosCarreteraNS(cli.NS, carretera);
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine($"Cliente #{cli.Id} desconectado al enviar datos. Eliminando de la lista. Error: {e.Message}");
+                        lock (locker)
+                        {
+                            clientes.Remove(cli);
+                        }
+                    }
                 }
             } while (!VActual.Acabado);
         }
