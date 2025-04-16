@@ -84,12 +84,18 @@ namespace servidor
                             carretera.AñadirVehiculo(v);
                         }
                         MostrarVehiculos();
-                        // NetworkStreamClass.EscribirDatosCarreteraNS(NS, carretera);
+
                         do
                         {   // Recibimos la actualización del vehículo y lo registramos en la carretera
                             carretera.ActualizarVehiculo( NetworkStreamClass.LeerDatosVehiculoNS(NS) );
                             MostrarVehiculos();
                         } while (!v.Acabado);
+
+                        // Enviamos los datos de la carretera a todos los clientes
+                        foreach (Cliente cli in clientes)
+                        {
+                            NetworkStreamClass.EscribirDatosCarreteraNS(cli.NS, carretera);
+                        }
                     } else
                     {
                         throw new Exception("El cliente ha iniciado el handshake erróneamente. Cerrando conexión...");
