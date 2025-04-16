@@ -72,6 +72,7 @@ namespace servidor
                     lock(locker)
                     {
                         carretera.VehiculosEnCarretera.Remove(e.Vehiculo);
+                        carretera.NumVehiculosEnCarrera--;
                     }
                 }
                 Cliente.Close();

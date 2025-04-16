@@ -22,7 +22,7 @@ namespace cliente
 
             try
             {
-                
+
                 // Establecemos la conexión con el server
                 Cliente.Connect(HostName, 10001);
                 if(Cliente.Connected) 
