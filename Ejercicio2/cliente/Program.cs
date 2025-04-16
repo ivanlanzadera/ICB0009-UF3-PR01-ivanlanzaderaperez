@@ -12,7 +12,7 @@ namespace cliente
         static readonly string HostName = "127.0.0.1";
         static NetworkStream? NS;
         static int Id;
-        static Vehiculo? vehiculo;
+        static Vehiculo? v;
 
         static void Main(string[] args)
         {
@@ -38,20 +38,19 @@ namespace cliente
                     // Recogemos la dirección que nos indica el servidor
                     string Dir = NetworkStreamClass.LeerMensajeNetworkStream(NS);
 
-                    vehiculo = new Vehiculo();
-                    vehiculo.Id = Id;
-                    vehiculo.Direccion = Dir;
+                    v = new Vehiculo();
+                    v.Id = Id;
+                    v.Direccion = Dir;
 
-                    // Pasamos datos del vehiculo al server
-                    NetworkStreamClass.EscribirDatosVehiculoNS(NS, vehiculo);
-
-                    // Recogemos los datos de la carretera
-                    Carretera c = NetworkStreamClass.LeerDatosCarreteraNS(NS);
-
-                    foreach (Vehiculo v in c.VehiculosEnCarretera)
+                    // Bucle para operar el vehículo
+                    for (int i = 0; i < 100; i++)
                     {
-                        Console.WriteLine("Vehiculo circulando - ID {0}", v.Id);
+                        Thread.Sleep(v.Velocidad);
+                        v.Pos++;
+                        NetworkStreamClass.EscribirDatosVehiculoNS(NS, v);
                     }
+
+                    v.Acabado = true;
 
                     // string msg;
                     // do 

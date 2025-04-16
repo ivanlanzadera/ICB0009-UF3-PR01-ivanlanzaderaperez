@@ -77,17 +77,20 @@ namespace servidor
                         }
                         NetworkStreamClass.EscribirMensajeNetworkStream(NS, DirCliente);
 
-                        Vehiculo v;
-                        do
+                        // Recibimos el vehículo que ha creado el cliente
+                        Vehiculo v = NetworkStreamClass.LeerDatosVehiculoNS(NS);
+                        lock (locker)
                         {
-                            v = NetworkStreamClass.LeerDatosVehiculoNS(NS);
-                            lock (locker)
-                            {
-                                carretera.AñadirVehiculo(v);
-                            }
+                            carretera.AñadirVehiculo(v);
+                        }
+                        MostrarVehiculos();
+                        // NetworkStreamClass.EscribirDatosCarreteraNS(NS, carretera);
+                        do
+                        {   // Recibimos la actualización del vehículo y lo registramos en la carretera
+                            carretera.ActualizarVehiculo( NetworkStreamClass.LeerDatosVehiculoNS(NS) );
                             MostrarVehiculos();
-                            NetworkStreamClass.EscribirDatosCarreteraNS(NS, carretera);
-                        } while (true);
+                        } while (!v.Acabado);
+                        
                         
                         // string instruccion;
                         // do
