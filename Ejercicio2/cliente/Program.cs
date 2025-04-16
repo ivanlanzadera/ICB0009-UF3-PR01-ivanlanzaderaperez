@@ -1,4 +1,5 @@
-﻿using System.Net.Sockets;
+﻿using System.Data.Common;
+using System.Net.Sockets;
 using CarreteraClass;
 using NetworkStreamNS;
 using VehiculoClass;
@@ -21,6 +22,7 @@ namespace cliente
 
             try
             {
+                
                 // Establecemos la conexión con el server
                 Cliente.Connect(HostName, 10001);
                 if(Cliente.Connected) 
@@ -29,11 +31,7 @@ namespace cliente
                     NS = Cliente.GetStream();
 
                     // Establecer el Handshake
-                    NetworkStreamClass.EscribirMensajeNetworkStream(NS, "INICIO");
-                    Id = int.Parse(NetworkStreamClass.LeerMensajeNetworkStream(NS));
-                    NetworkStreamClass.EscribirMensajeNetworkStream(NS, Id.ToString());
-
-                    Console.WriteLine("Cliente: Conectado");
+                    int Id = Handshake(NS);
 
                     // Recogemos la dirección que nos indica el servidor
                     string Dir = NetworkStreamClass.LeerMensajeNetworkStream(NS);
@@ -41,36 +39,51 @@ namespace cliente
                     Task TareaCarretera = new(EscuchasCarretera);
                     TareaCarretera.Start();
 
-                    v = new Vehiculo();
-                    v.Id = Id;
-                    v.Direccion = Dir;
-                    if (v.Direccion == "norte") 
-                    {
-                        v.Pos = 100;
-                        for (int i = 100; i > 0; i--)
-                        {
-                            Thread.Sleep(v.Velocidad);
-                            v.Pos--;
-                            NetworkStreamClass.EscribirDatosVehiculoNS(NS, v);
-                        }
-                    } else 
-                    {
-                        for (int i = 0; i < 100; i++)
-                        {
-                            Thread.Sleep(v.Velocidad);
-                            v.Pos++;
-                            NetworkStreamClass.EscribirDatosVehiculoNS(NS, v);
-                        }
-                    }
-                    // Bucle para operar el vehículo
-
-                    v.Acabado = true;
+                    OperarVehiculo(NS, Id, Dir);
                 }
+
             } catch (Exception e)
             {
                 Console.WriteLine("Ha ocurrido un error: {0}", e.Message);
             }
             Console.ReadLine();
+        }
+
+        private static int Handshake(NetworkStream NS)
+        {
+            NetworkStreamClass.EscribirMensajeNetworkStream(NS, "INICIO");
+            Id = int.Parse(NetworkStreamClass.LeerMensajeNetworkStream(NS));
+            NetworkStreamClass.EscribirMensajeNetworkStream(NS, Id.ToString());
+
+            Console.WriteLine("Cliente: Conectado");
+            return Id;
+        }
+
+        private static void OperarVehiculo(NetworkStream NS, int Id, string Dir)
+        {
+            v = new Vehiculo();
+            v.Id = Id;
+            v.Direccion = Dir;
+            if (v.Direccion == "norte") 
+            {
+                v.Pos = 100;
+                for (int i = 100; i > 0; i--)
+                {
+                    Thread.Sleep(v.Velocidad);
+                    v.Pos--;
+                    NetworkStreamClass.EscribirDatosVehiculoNS(NS, v);
+                }
+            } else 
+            {
+                for (int i = 0; i < 100; i++)
+                {
+                    Thread.Sleep(v.Velocidad);
+                    v.Pos++;
+                    NetworkStreamClass.EscribirDatosVehiculoNS(NS, v);
+                }
+            }
+
+            v.Acabado = true;
         }
 
         private static void EscuchasCarretera()
