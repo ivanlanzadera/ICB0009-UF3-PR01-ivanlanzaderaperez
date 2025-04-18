@@ -1,0 +1,45 @@
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solución\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.csprojAssemblyReference.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solución\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solución\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.AssemblyInfoInputs.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solución\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.AssemblyInfo.cs
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solución\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.csproj.CoreCompileInputs.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solución\NetworkStreamRW\bin\Debug\net5.0\NetworkStreamRW.deps.json
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solución\NetworkStreamRW\bin\Debug\net5.0\NetworkStreamRW.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solución\NetworkStreamRW\bin\Debug\net5.0\ref\NetworkStreamRW.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solución\NetworkStreamRW\bin\Debug\net5.0\NetworkStreamRW.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solución\NetworkStreamRW\bin\Debug\net5.0\Juego_class.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solución\NetworkStreamRW\bin\Debug\net5.0\Juego_class.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solución\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.csproj.CopyComplete
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solución\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solución\NetworkStreamRW\obj\Debug\net5.0\ref\NetworkStreamRW.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solución\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Enunciat\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.csprojAssemblyReference.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Enunciat\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Enunciat\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.AssemblyInfoInputs.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Enunciat\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.AssemblyInfo.cs
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Enunciat\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.csproj.CoreCompileInputs.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Enunciat\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Enunciat\NetworkStreamRW\obj\Debug\net5.0\ref\NetworkStreamRW.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Enunciat\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Enunciat\NetworkStreamRW\bin\Debug\net5.0\NetworkStreamRW.deps.json
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Enunciat\NetworkStreamRW\bin\Debug\net5.0\NetworkStreamRW.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Enunciat\NetworkStreamRW\bin\Debug\net5.0\ref\NetworkStreamRW.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Enunciat\NetworkStreamRW\bin\Debug\net5.0\NetworkStreamRW.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Enunciat\NetworkStreamRW\bin\Debug\net5.0\Juego_class.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Enunciat\NetworkStreamRW\bin\Debug\net5.0\Juego_class.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Enunciat\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.csproj.CopyComplete
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solucion - Ej1\NetworkStreamRW\bin\Debug\net5.0\NetworkStreamRW.deps.json
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solucion - Ej1\NetworkStreamRW\bin\Debug\net5.0\NetworkStreamRW.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solucion - Ej1\NetworkStreamRW\bin\Debug\net5.0\ref\NetworkStreamRW.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solucion - Ej1\NetworkStreamRW\bin\Debug\net5.0\NetworkStreamRW.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solucion - Ej1\NetworkStreamRW\bin\Debug\net5.0\Juego_class.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solucion - Ej1\NetworkStreamRW\bin\Debug\net5.0\Juego_class.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solucion - Ej1\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.csprojAssemblyReference.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solucion - Ej1\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solucion - Ej1\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.AssemblyInfoInputs.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solucion - Ej1\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.AssemblyInfo.cs
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solucion - Ej1\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.csproj.CoreCompileInputs.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solucion - Ej1\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.csproj.CopyComplete
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solucion - Ej1\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solucion - Ej1\NetworkStreamRW\obj\Debug\net5.0\ref\NetworkStreamRW.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2020-2021\Pràctiques\UF3\Solucion - Ej1\NetworkStreamRW\obj\Debug\net5.0\NetworkStreamRW.pdb

@@ -1,0 +1,72 @@
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\NetworkStreamClass.deps.json
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\NetworkStreamClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\ref\NetworkStreamClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\NetworkStreamClass.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\DatosViasClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\TrenClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\TrenesClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\TrenesClass.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\DatosViasClass.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\TrenClass.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.csproj.AssemblyReference.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.AssemblyInfoInputs.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.AssemblyInfo.cs
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.csproj.CoreCompileInputs.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.csproj.CopyComplete
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\ref\NetworkStreamClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\bin\Debug\net6.0\NetworkStreamClass.deps.json
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\bin\Debug\net6.0\NetworkStreamClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\bin\Debug\net6.0\ref\NetworkStreamClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\bin\Debug\net6.0\NetworkStreamClass.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\bin\Debug\net6.0\DatosViasClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\bin\Debug\net6.0\TrenClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\bin\Debug\net6.0\TrenesClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\bin\Debug\net6.0\TrenesClass.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\bin\Debug\net6.0\DatosViasClass.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\bin\Debug\net6.0\TrenClass.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.csproj.AssemblyReference.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.AssemblyInfoInputs.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.AssemblyInfo.cs
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.csproj.CoreCompileInputs.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.csproj.CopyComplete
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\obj\Debug\net6.0\ref\NetworkStreamClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2021-2022\Pràctiques\UF3\Solucion - Ej1\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\bin\Debug\net6.0\NetworkStreamClass.deps.json
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\bin\Debug\net6.0\NetworkStreamClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\bin\Debug\net6.0\ref\NetworkStreamClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\bin\Debug\net6.0\NetworkStreamClass.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\bin\Debug\net6.0\Bicicleta.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\bin\Debug\net6.0\Carrera.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\bin\Debug\net6.0\Bicicleta.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\bin\Debug\net6.0\Carrera.pdb
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.csproj.AssemblyReference.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.AssemblyInfoInputs.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.AssemblyInfo.cs
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.csproj.CoreCompileInputs.cache
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.csproj.CopyComplete
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\obj\Debug\net6.0\ref\NetworkStreamClass.dll
+C:\Users\Roger\Dropbox\La Salle - Online\2022-2023\Practiques\UF3\sandbox\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.pdb
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.dll
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.pdb
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\NetworkStreamClass.deps.json
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\NetworkStreamClass.dll
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\NetworkStreamClass.pdb
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\Carretera.dll
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\Vehiculo.dll
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\Vehiculo.pdb
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\bin\Debug\net6.0\Carretera.pdb
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.csproj.AssemblyReference.cache
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.AssemblyInfoInputs.cache
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.AssemblyInfo.cs
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\NetworkStreamClass.csproj.CoreCompileInputs.cache
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\NetworkS.E0D52BE6.Up2Date
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\refint\NetworkStreamClass.dll
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net6.0\ref\NetworkStreamClass.dll

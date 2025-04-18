@@ -1,0 +1,47 @@
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\bin\Debug\net8.0\NetworkStreamClass.deps.json
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\bin\Debug\net8.0\NetworkStreamClass.dll
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\bin\Debug\net8.0\NetworkStreamClass.pdb
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\bin\Debug\net8.0\Carretera.dll
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\bin\Debug\net8.0\Vehiculo.dll
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\bin\Debug\net8.0\Vehiculo.pdb
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\bin\Debug\net8.0\Carretera.pdb
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.csproj.AssemblyReference.cache
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.AssemblyInfoInputs.cache
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.AssemblyInfo.cs
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.csproj.CoreCompileInputs.cache
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net8.0\NetworkS.E0D52BE6.Up2Date
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.dll
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net8.0\refint\NetworkStreamClass.dll
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.pdb
+C:\Users\roger\Dropbox\La Salle - Online\2023-2024\Prácticas\UF3\Enunciado\NetworkStreamClass\obj\Debug\net8.0\ref\NetworkStreamClass.dll
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio1\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.GeneratedMSBuildEditorConfig.editorconfig
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio1\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.AssemblyInfoInputs.cache
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio1\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.AssemblyInfo.cs
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio1\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.csproj.CoreCompileInputs.cache
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio1\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.sourcelink.json
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio1\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.dll
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio1\NetworkStreamClass\obj\Debug\net8.0\refint\NetworkStreamClass.dll
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio1\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.pdb
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio1\NetworkStreamClass\bin\Debug\net8.0\NetworkStreamClass.deps.json
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio1\NetworkStreamClass\bin\Debug\net8.0\NetworkStreamClass.dll
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio1\NetworkStreamClass\bin\Debug\net8.0\NetworkStreamClass.pdb
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio1\NetworkStreamClass\obj\Debug\net8.0\ref\NetworkStreamClass.dll
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.csproj.AssemblyReference.cache
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.GeneratedMSBuildEditorConfig.editorconfig
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.AssemblyInfoInputs.cache
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.AssemblyInfo.cs
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.csproj.CoreCompileInputs.cache
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.sourcelink.json
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.dll
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\obj\Debug\net8.0\refint\NetworkStreamClass.dll
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\obj\Debug\net8.0\NetworkStreamClass.pdb
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\bin\Debug\net8.0\NetworkStreamClass.deps.json
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\bin\Debug\net8.0\NetworkStreamClass.dll
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\bin\Debug\net8.0\NetworkStreamClass.pdb
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\bin\Debug\net8.0\Carretera.dll
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\bin\Debug\net8.0\Vehiculo.dll
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\bin\Debug\net8.0\Vehiculo.pdb
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\bin\Debug\net8.0\Carretera.pdb
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\obj\Debug\net8.0\NetworkS.E0D52BE6.Up2Date
+F:\CFGS - DAM\2do año\2 Semestre\M09 - Procesos e hilos\UF3\ICB0009-UF3-PR01-ivanlanzaderaperez\Ejercicio2\NetworkStreamClass\obj\Debug\net8.0\ref\NetworkStreamClass.dll

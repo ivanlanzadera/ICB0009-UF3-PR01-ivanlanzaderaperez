@@ -1,0 +1,118 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Roger\\Dropbox\\La Salle - Online\\2022-2023\\Practiques\\UF3\\sandbox\\Carrera\\Carrera.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Roger\\Dropbox\\La Salle - Online\\2022-2023\\Practiques\\UF3\\sandbox\\Bicicleta\\Bicicleta.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Roger\\Dropbox\\La Salle - Online\\2022-2023\\Practiques\\UF3\\sandbox\\Bicicleta\\Bicicleta.csproj",
+        "projectName": "Bicicleta",
+        "projectPath": "C:\\Users\\Roger\\Dropbox\\La Salle - Online\\2022-2023\\Practiques\\UF3\\sandbox\\Bicicleta\\Bicicleta.csproj",
+        "packagesPath": "C:\\Users\\Roger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Roger\\Dropbox\\La Salle - Online\\2022-2023\\Practiques\\UF3\\sandbox\\Bicicleta\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Roger\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.115\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Roger\\Dropbox\\La Salle - Online\\2022-2023\\Practiques\\UF3\\sandbox\\Carrera\\Carrera.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Roger\\Dropbox\\La Salle - Online\\2022-2023\\Practiques\\UF3\\sandbox\\Carrera\\Carrera.csproj",
+        "projectName": "Carrera",
+        "projectPath": "C:\\Users\\Roger\\Dropbox\\La Salle - Online\\2022-2023\\Practiques\\UF3\\sandbox\\Carrera\\Carrera.csproj",
+        "packagesPath": "C:\\Users\\Roger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Roger\\Dropbox\\La Salle - Online\\2022-2023\\Practiques\\UF3\\sandbox\\Carrera\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Roger\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Roger\\Dropbox\\La Salle - Online\\2022-2023\\Practiques\\UF3\\sandbox\\Bicicleta\\Bicicleta.csproj": {
+                "projectPath": "C:\\Users\\Roger\\Dropbox\\La Salle - Online\\2022-2023\\Practiques\\UF3\\sandbox\\Bicicleta\\Bicicleta.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.115\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
