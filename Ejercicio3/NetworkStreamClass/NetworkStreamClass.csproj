@@ -11,5 +11,9 @@
   <ItemGroup>
     <ProjectReference Include = "../Carretera/Carretera.csproj" />
   </ItemGroup> 
+
+  <ItemGroup>
+    <ProjectReference Include = "../Conexion/Conexion.csproj" />
+  </ItemGroup>
   
 </Project>

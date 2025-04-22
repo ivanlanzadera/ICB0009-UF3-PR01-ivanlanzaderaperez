@@ -1,4 +1,5 @@
 ﻿using System.Xml.Serialization;
+using System.Text;
 
 namespace VehiculoClass;
 
@@ -37,13 +38,21 @@ public class Vehiculo
     public static Vehiculo BytesAVehiculo(byte[] bytesVehiculo)
     {
         Vehiculo tmpVehiculo; 
+
+        string datos = Encoding.UTF8.GetString(bytesVehiculo);
         
-        XmlSerializer serializer = new XmlSerializer(typeof(Vehiculo));
 
-        MemoryStream MS = new MemoryStream(bytesVehiculo);
+        try 
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(Vehiculo));
 
-        tmpVehiculo = (Vehiculo)serializer.Deserialize(MS);
+            MemoryStream MS = new MemoryStream(bytesVehiculo);
 
-        return tmpVehiculo;
+            tmpVehiculo = (Vehiculo)serializer.Deserialize(MS);
+
+            return tmpVehiculo;
+        } catch (Exception) { Console.WriteLine($"Error al leer el mensaje: {datos}"); }
+
+        return null;
     }
 }

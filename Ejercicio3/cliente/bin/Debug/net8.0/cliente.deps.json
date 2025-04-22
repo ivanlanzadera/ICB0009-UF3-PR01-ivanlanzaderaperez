@@ -27,9 +27,18 @@
           }
         }
       },
+      "Conexion/1.0.0": {
+        "runtime": {
+          "Conexion.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "NetworkStreamClass/1.0.0": {
         "dependencies": {
           "Carretera": "1.0.0",
+          "Conexion": "1.0.0",
           "Vehiculo": "1.0.0"
         },
         "runtime": {
@@ -56,6 +65,11 @@
       "sha512": ""
     },
     "Carretera/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Conexion/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

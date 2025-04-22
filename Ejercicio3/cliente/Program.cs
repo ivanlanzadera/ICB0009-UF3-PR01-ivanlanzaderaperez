@@ -1,4 +1,5 @@
-﻿using System.Data.Common;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Data.Common;
 using System.Net.Sockets;
 using CarreteraClass;
 using NetworkStreamNS;
@@ -14,6 +15,8 @@ namespace cliente
         static NetworkStream? NS;
         static int Id;
         static Vehiculo? v;
+        static readonly object locker = new();
+        static SemaphoreSlim SemAcceso = new (0);
 
         static void Main(string[] args)
         {
@@ -46,7 +49,7 @@ namespace cliente
             {
                 Console.WriteLine("Ha ocurrido un error: {0}", e.Message);
             }
-            Thread.Sleep(400);
+            Console.ReadLine();
             NS?.Close();
             Cliente.Close();
         }
@@ -63,9 +66,13 @@ namespace cliente
 
         private static void OperarVehiculo(NetworkStream NS, int Id, string Dir)
         {
-            v = new Vehiculo();
-            v.Id = Id;
-            v.Direccion = Dir;
+            lock (locker)
+            {
+                v = new Vehiculo();
+                v.Id = Id;
+                v.Direccion = Dir;
+            }
+
             if (v.Direccion == "norte") 
             {
                 v.Pos = 100;
@@ -73,7 +80,19 @@ namespace cliente
                 {
                     Thread.Sleep(v.Velocidad);
                     v.Pos--;
-                    NetworkStreamClass.EscribirDatosVehiculoNS(NS, v);
+
+                    if (v.Pos % 5 == 0 && v.Pos != 50) { NetworkStreamClass.EscribirDatosVehiculoNS(NS, v); }
+
+                    // Si está a punto de entrar al puente, escuchar permiso del servidor
+                    if (v.Pos == 50)
+                    {
+                        lock (locker) { v.Parado = true; }
+                        NetworkStreamClass.EscribirDatosVehiculoNS(NS, v);
+                        // Console.WriteLine($"Enviando Vehiculo -> Id: {v.Id}, Direccion: {v.Direccion}, Pos: {v.Pos}, Parado: {v.Parado}, Acabado: {v.Acabado}");
+                        Console.WriteLine("El vehículo ha llegado al puente. Esperando acceso...");
+                        SemAcceso.Wait();
+                        Console.WriteLine("¡Acceso concedido!");
+                    }
                 }
             } else 
             {
@@ -81,24 +100,61 @@ namespace cliente
                 {
                     Thread.Sleep(v.Velocidad);
                     v.Pos++;
-                    NetworkStreamClass.EscribirDatosVehiculoNS(NS, v);
+
+                    if (v.Pos % 5 == 0 && v.Pos != 30) { NetworkStreamClass.EscribirDatosVehiculoNS(NS, v); }
+
+                    // Si está a punto de entrar al puente, escuchar permiso del servidor
+                    if (v.Pos == 30)
+                    {
+                        lock (locker) { v.Parado = true; }
+                        NetworkStreamClass.EscribirDatosVehiculoNS(NS, v);
+                        // Console.WriteLine($"Enviando Vehiculo -> Id: {v.Id}, Direccion: {v.Direccion}, Pos: {v.Pos}, Parado: {v.Parado}, Acabado: {v.Acabado}");
+                        Console.WriteLine("El vehículo ha llegado al puente. Esperando acceso...");
+                        SemAcceso.Wait();
+                        Console.WriteLine("¡Acceso concedido!");
+                    }
                 }
             }
-
-            v.Acabado = true;
-            NetworkStreamClass.EscribirDatosVehiculoNS(NS, v);
+            lock (locker)
+            {
+                v.Acabado = true;
+                NetworkStreamClass.EscribirDatosVehiculoNS(NS, v);
+            }
         }
 
         private static void EscuchasCarretera()
         {
-            Carretera c;
+            Carretera c = new();
+            Console.WriteLine("Ejecutando escuchas carretera");
+            string BufferPendienteCarretera ="";
 
             do
             {
-                c = NetworkStreamClass.LeerDatosCarreteraNS(NS);
-                Console.WriteLine("\n\n\n### MOSTRANDO ESTADO DE LOS VEHÍCULOS ###\n");
+                try 
+                {
+                    c = NetworkStreamClass.LeerDatosCarreteraNS(NS, ref BufferPendienteCarretera);
+                    int? pos = null;
+                    bool? parado = null;
+                    foreach (Vehiculo vc in c.VehiculosEnCarretera)
+                    {
+                        if (vc.Id == v!.Id) 
+                        { 
+                            pos = vc.Pos; 
+                            parado = vc.Parado;
+                        }
+                    }
+                } catch (Exception e) { Console.WriteLine($"Algo ha ocurrido mal durante la lectura: {e.Message}"); }
+
+                if (v!.Parado && c.VehiculoPuente?.Id == v!.Id)
+                {
+                    lock (locker) { v.Parado = false; }
+                    SemAcceso.Release();
+                }
+
+                Console.WriteLine($"\n\n\n### RESUMEN CARRETERA - VEHICULO {v.Id} ###\n");
                 foreach (Vehiculo vehiculo in c.VehiculosEnCarretera)
                 {
+
                     Console.Write("[{0}]\t Vehículo #{1}: ", vehiculo.Direccion, vehiculo.Id);
                     for (int i = 0; i<100; i += 2)
                     {
@@ -119,8 +175,9 @@ namespace cliente
 
                 if (v != null && v.Acabado)
                 {
+                    Console.WriteLine("El vehiculo ha llegado al final de la carretera");
                     break;
-                }   
+                } 
 
             } while (true);
         }

@@ -15,6 +15,16 @@
           "bin/placeholder/Carretera.dll": {}
         }
       },
+      "Conexion/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Conexion.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Conexion.dll": {}
+        }
+      },
       "Vehiculo/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -33,6 +43,11 @@
       "path": "../Carretera/Carretera.csproj",
       "msbuildProject": "../Carretera/Carretera.csproj"
     },
+    "Conexion/1.0.0": {
+      "type": "project",
+      "path": "../Conexion/Conexion.csproj",
+      "msbuildProject": "../Conexion/Conexion.csproj"
+    },
     "Vehiculo/1.0.0": {
       "type": "project",
       "path": "../Vehiculo/Vehiculo.csproj",
@@ -42,6 +57,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Carretera >= 1.0.0",
+      "Conexion >= 1.0.0",
       "Vehiculo >= 1.0.0"
     ]
   },
@@ -72,6 +88,9 @@
           "projectReferences": {
             "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio3\\Carretera\\Carretera.csproj": {
               "projectPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio3\\Carretera\\Carretera.csproj"
+            },
+            "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio3\\Conexion\\Conexion.csproj": {
+              "projectPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio3\\Conexion\\Conexion.csproj"
             },
             "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio3\\Vehiculo\\Vehiculo.csproj": {
               "projectPath": "F:\\CFGS - DAM\\2do año\\2 Semestre\\M09 - Procesos e hilos\\UF3\\ICB0009-UF3-PR01-ivanlanzaderaperez\\Ejercicio3\\Vehiculo\\Vehiculo.csproj"

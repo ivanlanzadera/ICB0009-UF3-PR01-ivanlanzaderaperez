@@ -39,6 +39,7 @@
       "NetworkStreamClass/1.0.0": {
         "dependencies": {
           "Carretera": "1.0.0",
+          "Conexion": "1.0.0",
           "Vehiculo": "1.0.0"
         },
         "runtime": {

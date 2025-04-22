@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using System.Text;
+using System.Xml.Serialization;
 using VehiculoClass;
 
 namespace CarreteraClass;
@@ -8,6 +9,7 @@ public class Carretera
 {
     public List<Vehiculo> VehiculosEnCarretera = new List<Vehiculo>();
     public int NumVehiculosEnCarrera = 0;
+    public Vehiculo? VehiculoPuente = null;
 
     public Carretera ()
     {
@@ -36,6 +38,7 @@ public class Carretera
         {
             veh.Pos = V.Pos;
             veh.Velocidad = V.Velocidad;
+            veh.Parado = V.Parado;
         }
     }
 
@@ -67,13 +70,21 @@ public class Carretera
     public static Carretera BytesACarretera(byte[] bytesCarrera)
     {
         Carretera tmpCarretera; 
-        
-        XmlSerializer serializer = new XmlSerializer(typeof(Carretera));
 
-        MemoryStream MS = new MemoryStream(bytesCarrera);
+        string datos = Encoding.UTF8.GetString(bytesCarrera);
 
-        tmpCarretera = (Carretera) serializer.Deserialize(MS);
+        try 
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(Carretera));
 
-        return tmpCarretera;
+            MemoryStream MS = new MemoryStream(bytesCarrera);
+
+            tmpCarretera = (Carretera) serializer.Deserialize(MS);
+
+            return tmpCarretera;
+        } catch (Exception) { Console.WriteLine($"Error al leer el mensaje: {datos}"); }
+
+        return null;
+    
     }    
 }
